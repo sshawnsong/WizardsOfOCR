@@ -43,5 +43,5 @@ async def post_parcel(file: UploadFile, db: Session = Depends(get_db)):
 
 
 @router.put("/{parcel_id}", tags=["root"])
-async def post_parcel(parcel_id: int, new_status: bool, db: Session = Depends(get_db)):
+async def put_parcel(parcel_id: int, new_status: bool, db: Session = Depends(get_db)):
     return update_parcel(db, parcel_id=parcel_id, new_status=new_status)
