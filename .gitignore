@@ -105,4 +105,6 @@ psd
 thumb
 sketch
 
+.api.venv/python
+.api..idea
 # End of https://www.toptal.com/developers/gitignore/api/react,pycharm+all
