@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 from .models import Parcels
 
-DB_URL = 'postgresql://postgres:0404@localhost:5432/wizardsofocr'
+DB_URL = 'postgresql://{username}:{password}@localhost:5432/{database}'
 
 engine = create_engine(DB_URL)
 
